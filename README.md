@@ -1,4 +1,4 @@
-# 📈 Stock Sentiment Analyser — NSE Indian Markets
+# Stock Sentiment Analyser — NSE Indian Markets
 
 > Scrapes 10,000+ financial headlines via free RSS feeds, scores them with VADER + TextBlob NLP, and measures directional alignment between daily sentiment and next-day NSE stock price movements — with a statistically significant 72% alignment signal.
 
@@ -11,7 +11,7 @@
 
 ---
 
-## 📌 Overview
+##  Overview
 
 Retail and institutional investors spend hours reading financial news before markets open. This project automates that process — scraping headlines from major Indian financial news sources, scoring their sentiment, and measuring how well that sentiment predicts the next day's price direction for 20 NSE-listed stocks.
 
@@ -19,7 +19,7 @@ The pipeline runs daily (fully automated) and produces sentiment-vs-price dashbo
 
 ---
 
-## 📊 Key Results
+##  Key Results
 
 | Metric | Value |
 |---|---|
@@ -41,19 +41,19 @@ The pipeline runs daily (fully automated) and produces sentiment-vs-price dashbo
 
 ---
 
-## ✨ Features
+##  Features
 
-- 📰 **Multi-source headline scraping** — Moneycontrol, Economic Times, LiveMint, Business Standard, Reuters India, Yahoo Finance (via free RSS feeds, no API key required)
-- 🤖 **Dual NLP scoring** — VADER (finance-tuned rule-based) + TextBlob (ML-based) with ensemble averaging
-- 📉 **Real-time price data** — Yahoo Finance API (`yfinance`) for NSE stocks (`.NS` suffix)
-- 🎯 **Directional alignment metric** — measures whether sentiment on day T predicts price movement on day T+1
-- 📊 **Statistical significance testing** — binomial test against 50% random baseline
-- 🔄 **Automated daily-refresh** — runs the full pipeline with a single command, always pulling fresh data
+-  **Multi-source headline scraping** — Moneycontrol, Economic Times, LiveMint, Business Standard, Reuters India, Yahoo Finance (via free RSS feeds, no API key required)
+-  **Dual NLP scoring** — VADER (finance-tuned rule-based) + TextBlob (ML-based) with ensemble averaging
+-  **Real-time price data** — Yahoo Finance API (`yfinance`) for NSE stocks (`.NS` suffix)
+-  **Directional alignment metric** — measures whether sentiment on day T predicts price movement on day T+1
+-  **Statistical significance testing** — binomial test against 50% random baseline
+-  **Automated daily-refresh** — runs the full pipeline with a single command, always pulling fresh data
 - 📈 **5 visualisation panels**: sentiment distribution, per-stock alignment, VADER vs TextBlob scatter, sentiment-vs-price time series, headline volume trend
 
 ---
 
-## 🛠️ Tech Stack
+## Tech Stack
 
 | Tool | Purpose |
 |---|---|
@@ -68,7 +68,7 @@ The pipeline runs daily (fully automated) and produces sentiment-vs-price dashbo
 
 ---
 
-## 📂 Project Structure
+##  Project Structure
 
 ```
 stock-sentiment-analyser/
@@ -87,7 +87,7 @@ stock-sentiment-analyser/
 
 ---
 
-## 🚀 Getting Started
+##  Getting Started
 
 ```bash
 # 1. Clone the repository
@@ -109,7 +109,7 @@ python stock_sentiment_analyser.py
 
 ---
 
-## 🧠 How It Works
+##  How It Works
 
 ```
 RSS Feeds (13 sources: Moneycontrol, ET, LiveMint, BS, Reuters...)
@@ -145,7 +145,7 @@ Statistical Test (binomial vs 50% baseline) + Charts
 
 ---
 
-## 📈 Potential Improvements
+##  Potential Improvements
 
 - [ ] Add NewsAPI / Alpha Vantage News integration for richer headline volume
 - [ ] Fine-tune FinBERT (finance-specific BERT model) for higher NLP accuracy
@@ -156,21 +156,21 @@ Statistical Test (binomial vs 50% baseline) + Charts
 
 ---
 
-## ⚠️ Disclaimer
+##  Disclaimer
 
 This project is for educational and research purposes only. Sentiment alignment does not constitute financial advice. Past directional alignment is not indicative of future results.
 
 ---
 
-## 📄 License
+##  License
 
 This project is licensed under the [MIT License](LICENSE).
 
 ---
 
-## 👩‍💻 Author
+##  Author
 
 **Radhika Dhoot**  
-📧 radhikadhoot206@gmail.com  
-🔗 [LinkedIn](https://www.linkedin.com/in/radhika-dhoot-848aa1251)  
-🐙 [GitHub](https://github.com/radhikkaajeanzzz)
+ radhikadhoot206@gmail.com  
+ [LinkedIn](https://www.linkedin.com/in/radhika-dhoot-848aa1251)  
+ [GitHub](https://github.com/radhikadhoot29)
